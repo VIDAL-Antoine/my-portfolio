@@ -7,7 +7,7 @@ function Main() {
 
   return (
     <div className="container">
-      <div className="about-section">
+      <div className="presentation-section">
         <div className="image-wrapper">
           <img src='/profile.jpg' alt="Avatar" />
         </div>

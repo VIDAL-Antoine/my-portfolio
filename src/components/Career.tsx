@@ -37,7 +37,7 @@ const labelsQPark = [
     "Vue.js",
     "Node.js",
     "Sequelize",
-    "MariaDBt",
+    "MariaDB",
     "Javascript",
     "Linux",
     "Docker",
@@ -84,10 +84,10 @@ function Career() {
             <h4 className="vertical-timeline-element-subtitle">Coda Systèmes - Montrouge</h4>
             <p>Développement d'un portique autonome équipé de caméras et d'un écran, permettant de détecter en temps réel les Équipements de Protection Individuelle (EPI) portés par les utilisateurs grâce à un modèle d'IA embarqué :</p>
             <ul>
-              <li>Entraînement d'un modèle d'IA (YOLO) pour la détection d'EPI (casque, gilet...)</li>
-              <li>Intégration du modèle d'IA dans un portique physique : traitement vidéo en temps réel via les caméras et l'IA</li>
-              <li>Développement d'une API assurant la communication entre l'IA et l'interface aﬃchant clairement les EPI détectés et manquants sur l'écran</li>
-              <li>Mise en place d'une base de données pour l'historisation et le suivi des passages</li>
+              <li><p>Entraînement d'un modèle d'IA (YOLO) pour la détection d'EPI (casque, gilet...)</p></li>
+              <li><p>Intégration du modèle d'IA dans un portique physique : traitement vidéo en temps réel via les caméras et l'IA</p></li>
+              <li><p>Développement d'une API assurant la communication entre l'IA et l'interface aﬃchant clairement les EPI détectés et manquants sur l'écran</p></li>
+              <li><p>Mise en place d'une base de données pour l'historisation et le suivi des passages</p></li>
             </ul>
             <div>
                 {labelsPortique.map((label) => (
@@ -105,9 +105,9 @@ function Career() {
             <h4 className="vertical-timeline-element-subtitle">Coda Systèmes - Montrouge</h4>
             <p>Développement d'un logiciel d'analyse de vidéos à très haute vitesse (1000 fps) :</p>
             <ul>
-              <li>Enregistrement de vidéos avec contrôle précis des paramètres de la caméra (résolution, fps, durée de la vidéo...)</li>
-              <li>Lecture optimisée des vidéos enregistrées avec traitement frame par frame, permettant une analyse détaillée impossible avec des lecteurs classiques</li>
-              <li>Développement d'outils de dessins et de suivi d'objets directement sur les vidéos</li>
+              <li><p>Enregistrement de vidéos avec contrôle précis des paramètres de la caméra (résolution, fps, durée de la vidéo...)</p></li>
+              <li><p>Lecture optimisée des vidéos enregistrées avec traitement frame par frame, permettant une analyse détaillée impossible avec des lecteurs classiques</p></li>
+              <li><p>Développement d'outils de dessins et de suivi d'objets directement sur les vidéos</p></li>
             </ul>
             <div className="">
                 {labelsC2T.map((label) => (
@@ -125,10 +125,10 @@ function Career() {
             <h4 className="vertical-timeline-element-subtitle">Qarnot - Montrouge</h4>
             <p>Refonte du site stockant les données internes de l'entreprise :</p>
             <ul>
-              <li>Création de pages et composants Vue.js (front-end), développement de l'API Node.js (back-end) et gestion des modèles Sequelize ainsi que de la base de données</li>
-              <li>Conception et amélioration de composants UI (cards, listes, formulaires) pour améliorer l'ergonomie</li>
-              <li>Correction de bugs et refactorisation de composants existants</li>
-              <li>Collaboration avec l'équipe : code reviews GitLab, suivi de tickets Jira, contribution à la documentation technique</li>
+              <li><p>Création de pages et composants Vue.js (front-end), développement de l'API Node.js (back-end) et gestion des modèles Sequelize ainsi que de la base de données</p></li>
+              <li><p>Conception et amélioration de composants UI (cards, listes, formulaires) pour améliorer l'ergonomie</p></li>
+              <li><p>Correction de bugs et refactorisation de composants existants</p></li>
+              <li><p>Collaboration avec l'équipe : code reviews GitLab, suivi de tickets Jira, contribution à la documentation technique</p></li>
             </ul>
             <div>
                 {labelsQPark.map((label) => (
@@ -146,7 +146,7 @@ function Career() {
             <h4 className="vertical-timeline-element-subtitle">EDF - Palaiseau</h4>
             <p>Stage de 5ème année :</p>
             <ul>
-              <li>Conception d'un outil de simulation multi-agents pour étudier l'impact de facteurs socio-économiques (salaire, localisation...) sur l'adhésion des ménages aux oﬀres EDF</li>
+              <li><p>Conception d'un outil de simulation multi-agents pour étudier l'impact de facteurs socio-économiques (salaire, localisation...) sur l'adhésion des ménages aux oﬀres EDF</p></li>
             </ul>
             <div>
                 {labelsStageEDF.map((label) => (
@@ -164,7 +164,7 @@ function Career() {
             <h4 className="vertical-timeline-element-subtitle">LI-PaRAD - Guyancourt</h4>
             <p>Stage de 4ème année :</p>
             <ul>
-              <li>Développement de modèles de Machine Learning pour prédire et détecter les disques durs susceptibles de tomber en panne en fonction de caractéristiques telles que le fabricant, la capacité disponible, le nombre de lectures et d'écritures...</li>
+              <li><p>Développement de modèles de Machine Learning pour prédire et détecter les disques durs susceptibles de tomber en panne en fonction de caractéristiques telles que le fabricant, la capacité disponible, le nombre de lectures et d'écritures...</p></li>
             </ul>
             <div>
                 {labelsLIPaRAD.map((label) => (

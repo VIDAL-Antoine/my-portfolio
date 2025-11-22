@@ -11,15 +11,20 @@ function About() {
           <div>
             <h2>Langues parlées</h2>
             <ul>
-              <span><li><span className="fi fi-gb" /> Anglais : B2 (TOEIC 2022 : 925/990)</li></span>
-              <span><li><span className="fi fi-jp" /> Japonais : B1</li></span>
+              <li style={{ display: 'flex', alignItems: 'center', gap: '8px' }}><span className="fi fi-gb" /> <span>Anglais : B2 (TOEIC 2022 : 925/990)</span></li>
+              <li style={{ display: 'flex', alignItems: 'center', gap: '8px' }}><span className="fi fi-jp" /> <span>Japonais : B1</span></li>
             </ul>
           </div>
 
           <div>
             <h2>Hobbies</h2>
             <ul>
-              <span><li><TranslateIcon /> Apprentissage de la langue japonaise</li></span>
+              <span>
+                <li style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                <TranslateIcon />
+                Apprentissage de la langue japonaise
+              </li>
+              </span>
             </ul>
           </div>
         </div>
