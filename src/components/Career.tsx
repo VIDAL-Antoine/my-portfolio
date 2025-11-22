@@ -1,9 +1,8 @@
-import React from "react";
 import '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
-import Chip from '@mui/material/Chip';
+import { Chip, ChipProps } from '@mui/material';
 import 'react-vertical-timeline-component/style.min.css';
 import '../assets/styles/Career.scss'
 
@@ -65,6 +64,16 @@ const labelsLIPaRAD = [
     "Bash",
 ];
 
+const CareerChip = (props: ChipProps) => (
+  <Chip
+    {...props}
+    sx={{
+      margin: '4px',
+      '& .MuiChip-label': { fontFamily: '"Lato", sans-serif' },
+      ...props.sx
+    }}
+  />
+);
 
 function Career() {
   return (
@@ -90,9 +99,17 @@ function Career() {
               <li><p>Mise en place d'une base de données pour l'historisation et le suivi des passages</p></li>
             </ul>
             <div>
-                {labelsPortique.map((label) => (
-                    <Chip key={label} label={label} style={{ margin: '4px' }} />
-                ))}
+              {labelsPortique.map((label) => (
+                <CareerChip
+                  key={label}
+                  label={label}
+                  sx={label === "Vue.js" || label === "Javascript" || label === "FastAPI" || label === "Python" ? {
+                    backgroundColor: "#42b883",
+                    color: "white",
+                    fontWeight: "bold",
+                  } : {}}
+                />
+              ))}
             </div>
           </VerticalTimelineElement>
           <VerticalTimelineElement
@@ -110,9 +127,17 @@ function Career() {
               <li><p>Développement d'outils de dessins et de suivi d'objets directement sur les vidéos</p></li>
             </ul>
             <div className="">
-                {labelsC2T.map((label) => (
-                    <Chip key={label} label={label} style={{ margin: '4px' }} />
-                ))}
+              {labelsC2T.map((label) => (
+                <CareerChip
+                  key={label}
+                  label={label}
+                  sx={label === "Python" ? {
+                    backgroundColor: "#42b883",
+                    color: "white",
+                    fontWeight: "bold",
+                  } : {}}
+                />
+              ))}
             </div>
           </VerticalTimelineElement>
           <VerticalTimelineElement
@@ -131,9 +156,17 @@ function Career() {
               <li><p>Collaboration avec l'équipe : code reviews GitLab, suivi de tickets Jira, contribution à la documentation technique</p></li>
             </ul>
             <div>
-                {labelsQPark.map((label) => (
-                    <Chip key={label} label={label} style={{ margin: '4px' }} />
-                ))}
+              {labelsQPark.map((label) => (
+                <CareerChip
+                  key={label}
+                  label={label}
+                  sx={label === "Vue.js" || label === "Node.js" || label === "Javascript" ? {
+                    backgroundColor: "#42b883",
+                    color: "white",
+                    fontWeight: "bold",
+                  } : {}}
+                />
+              ))}
             </div>
           </VerticalTimelineElement>
           <VerticalTimelineElement
@@ -149,9 +182,9 @@ function Career() {
               <li><p>Conception d'un outil de simulation multi-agents pour étudier l'impact de facteurs socio-économiques (salaire, localisation...) sur l'adhésion des ménages aux oﬀres EDF</p></li>
             </ul>
             <div>
-                {labelsStageEDF.map((label) => (
-                    <Chip key={label} label={label} style={{ margin: '4px' }} />
-                ))}
+              {labelsStageEDF.map((label) => (
+                <CareerChip key={label} label={label} />
+              ))}
             </div>
           </VerticalTimelineElement>
                     <VerticalTimelineElement
@@ -167,9 +200,17 @@ function Career() {
               <li><p>Développement de modèles de Machine Learning pour prédire et détecter les disques durs susceptibles de tomber en panne en fonction de caractéristiques telles que le fabricant, la capacité disponible, le nombre de lectures et d'écritures...</p></li>
             </ul>
             <div>
-                {labelsLIPaRAD.map((label) => (
-                    <Chip key={label} label={label} />
-                ))}
+              {labelsLIPaRAD.map((label) => (
+                <CareerChip
+                  key={label}
+                  label={label}
+                  sx={label === "Python" ? {
+                    backgroundColor: "#42b883",
+                    color: "white",
+                    fontWeight: "bold",
+                  } : {}}
+                />
+              ))}
             </div>
           </VerticalTimelineElement>
         </VerticalTimeline>
