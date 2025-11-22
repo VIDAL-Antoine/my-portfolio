@@ -21,7 +21,7 @@ function Education() {
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
             <h3 className="vertical-timeline-element-title">Ingénieur informatique</h3>
-            <h4 className="vertical-timeline-element-subtitle">Vélizy</h4>
+            <h4 className="vertical-timeline-element-subtitle">ISTY, UVSQ Paris-Saclay - Vélizy</h4>
             <p>Programmation Orientée Objet, C, Linux, Bases de données, Systèmes d'exploitation, Compilateurs, Architec- ture des ordinateurs, Algorithmique, Architecture logicielle</p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
@@ -31,7 +31,7 @@ function Education() {
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
             <h3 className="vertical-timeline-element-title">Master Calcul Haute Performance</h3>
-            <h4 className="vertical-timeline-element-subtitle">Guyancourt</h4>
+            <h4 className="vertical-timeline-element-subtitle">LI-PaRAD, UVSQ Paris-Saclay - Guyancourt</h4>
             <p>Big Data, Parallélisme, Multithreading</p>
           </VerticalTimelineElement>
         </VerticalTimeline>
