@@ -12,7 +12,7 @@ const Project = ({ lang }: ProjectProps) => {
             <div className="project">
                 <img src={jlptexplorer} className="zoom" alt="thumbnail" width="100%"/>
                 <h2>JLPT Explorer</h2>
-                <p>Site web pour apprendre le japonais. Application full-stack : interface en <strong>React</strong> et API REST via <strong>Node.js</strong> connectée à une base MongoDB.</p>
+                <p>Site web pour apprendre le japonais (actuellement non disponible). Application full-stack : interface en <strong>React</strong> et API REST via <strong>Node.js</strong> connectée à une base MongoDB.</p>
             </div>
             <div className="project">
                 <a href="https://www.example.com" target="_blank" rel="noreferrer"><img src={myportfoliopreview} className="zoom" alt="thumbnail" width="100%"/></a>
