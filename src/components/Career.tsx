@@ -91,7 +91,7 @@ function Career() {
             </ul>
             <div>
                 {labelsPortique.map((label) => (
-                    <Chip key={label} label={label} />
+                    <Chip key={label} label={label} style={{ margin: '4px' }} />
                 ))}
             </div>
           </VerticalTimelineElement>
@@ -111,7 +111,7 @@ function Career() {
             </ul>
             <div className="">
                 {labelsC2T.map((label) => (
-                    <Chip key={label} label={label} />
+                    <Chip key={label} label={label} style={{ margin: '4px' }} />
                 ))}
             </div>
           </VerticalTimelineElement>
@@ -132,7 +132,7 @@ function Career() {
             </ul>
             <div>
                 {labelsQPark.map((label) => (
-                    <Chip key={label} label={label} />
+                    <Chip key={label} label={label} style={{ margin: '4px' }} />
                 ))}
             </div>
           </VerticalTimelineElement>
@@ -150,7 +150,7 @@ function Career() {
             </ul>
             <div>
                 {labelsStageEDF.map((label) => (
-                    <Chip key={label} label={label} />
+                    <Chip key={label} label={label} style={{ margin: '4px' }} />
                 ))}
             </div>
           </VerticalTimelineElement>
