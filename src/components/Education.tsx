@@ -6,7 +6,9 @@ import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timel
 import 'react-vertical-timeline-component/style.min.css';
 import '../assets/styles/Education.scss'
 
-function Education() {
+interface EducationProps { lang: 'fr' | 'en' }
+
+const Education = ({ lang }: EducationProps) => {
   return (
     <div id="education">
       <div className="items-container">

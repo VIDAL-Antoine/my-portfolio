@@ -4,7 +4,9 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import DescriptionIcon from '@mui/icons-material/Description';
 import '../assets/styles/Footer.scss'
 
-function Footer() {
+interface FooterProps { lang: 'fr' | 'en' }
+
+const Footer = ({ lang }: FooterProps) => {
   return (
     <footer>
       <div>

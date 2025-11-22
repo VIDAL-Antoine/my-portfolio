@@ -3,8 +3,9 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import '../assets/styles/Main.scss';
 
-function Main() {
+interface MainProps { lang: 'fr' | 'en' }
 
+const Main = ({ lang }: MainProps) => {
   return (
     <div className="container">
       <div className="presentation-section">

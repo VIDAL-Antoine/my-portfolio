@@ -1,7 +1,9 @@
 import 'flag-icons/css/flag-icons.min.css';
 import TranslateIcon from '@mui/icons-material/Translate';
 
-function About() {
+interface AboutProps { lang: 'fr' | 'en' }
+
+const About = ({ lang }: AboutProps) => {
   return (
     <div id="about">
       <div className="items-container">

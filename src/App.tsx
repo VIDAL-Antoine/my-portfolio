@@ -1,36 +1,16 @@
-import {useState, useEffect} from "react";
-import {
-  Main,
-  Career,
-  Education,
-  // Expertise,
-  Project,
-  About,
-  Navigation,
-  Footer,
-} from "./components";
-import FadeIn from './components/FadeIn';
-import './index.scss';
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import AppContent from "./AppContent";
 
 function App() {
-    useEffect(() => {
-        window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
-      }, []);
-
-    return (
-    <div className={'main-container'}>
-        <Navigation />
-        <FadeIn transitionDuration={700}>
-            <Main/>
-            {/* <Expertise/> */}
-            <Career/>
-            <Education/>
-            <Project/>
-            <About/>
-        </FadeIn>
-        <Footer />
-    </div>
-    );
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Navigate to="/fr" replace />} />
+        <Route path="/fr" element={<AppContent lang="fr" />} />
+        {/* <Route path="/en" element={<AppContent lang="en" />} /> */}
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;

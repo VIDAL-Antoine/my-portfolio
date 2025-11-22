@@ -32,7 +32,7 @@ const labelsC2T = [
     "Github",
 ];
 
-const labelsQPark = [
+const labelsQarnot = [
     "Vue.js",
     "Node.js",
     "Sequelize",
@@ -75,7 +75,9 @@ const CareerChip = (props: ChipProps) => (
   />
 );
 
-function Career() {
+interface CareerProps { lang: 'fr' | 'en' }
+
+const Career = ({ lang }: CareerProps) => {
   return (
     <div id="career">
       <div className="items-container">
@@ -156,7 +158,7 @@ function Career() {
               <li><p>Collaboration avec l'équipe : code reviews GitLab, suivi de tickets Jira, contribution à la documentation technique</p></li>
             </ul>
             <div>
-              {labelsQPark.map((label) => (
+              {labelsQarnot.map((label) => (
                 <CareerChip
                   key={label}
                   label={label}

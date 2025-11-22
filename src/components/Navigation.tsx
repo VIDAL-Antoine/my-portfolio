@@ -17,7 +17,10 @@ import Toolbar from '@mui/material/Toolbar';
 const drawerWidth = 240;
 const navItems = [['Expériences professionnelles', 'career'], ['Formation', 'education'], ['Projets', 'projects'], ['À propos', 'about']];
 
-function Navigation() {
+
+interface NavigationProps { lang: 'fr' | 'en' }
+
+const Navigation = ({ lang }: NavigationProps) => {
   const [mobileOpen, setMobileOpen] = useState<boolean>(false);
   const [scrolled, setScrolled] = useState<boolean>(false);
 

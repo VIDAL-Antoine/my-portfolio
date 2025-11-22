@@ -2,7 +2,9 @@ import jlptexplorer from '../assets/images/jlptexplorer-preview.png';
 import myportfoliopreview from '../assets/images/my-portfolio-preview.png';
 import '../assets/styles/Project.scss';
 
-function Project() {
+interface ProjectProps { lang: 'fr' | 'en' }
+
+const Project = ({ lang }: ProjectProps) => {
     return(
     <div className="projects-container" id="projects">
         <h1>Projets personnels</h1>
