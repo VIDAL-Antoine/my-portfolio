@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import {
   Main,
-  Career,
+  Experience,
   Education,
   // Expertise,
   Project,
@@ -10,7 +10,7 @@ import {
   Footer,
 } from "./components";
 import FadeIn from './components/FadeIn';
-import './index.scss';
+import './style.scss';
 import i18n from "./i18n";
 
 interface AppContentProps {
@@ -31,7 +31,7 @@ export default function AppContent({ lang }: AppContentProps) {
       <Navigation />
       <FadeIn transitionDuration={700}>
         <Main />
-        <Career />
+        <Experience />
         <Education />
         <Project />
         <About />

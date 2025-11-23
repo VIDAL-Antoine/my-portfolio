@@ -1,7 +1,7 @@
 {
   "navigation": {
     "menu": "Menu",
-    "career": "Expériences professionnelles",
+    "experience": "Expériences",
     "education": "Formation",
     "projects": "Projets",
     "about": "À propos"
@@ -9,85 +9,112 @@
   "main": {
     "job": "Ingénieur développeur fullstack"
   },
-  "career": {
+  "experience": {
     "title": "Expériences professionnelles",
-
-    "coda_portique": {
-      "job": "Développeur fullstack",
-      "company_location": "Coda Systèmes - Montrouge",
-      "date": "Septembre 2025 - Aujourd'hui",
-      "summary": "Développement d'un portique autonome équipé de caméras et d'un écran, permettant de détecter en temps réel les Équipements de Protection Individuelle (EPI) portés par les utilisateurs grâce à un modèle d'IA embarqué :",
-      "description_1": "Entraînement d'un modèle d'IA (YOLO) pour la détection d'EPI (casque, gilet...)",
-      "description_2": "Intégration du modèle d'IA dans un portique physique : traitement vidéo en temps réel via les caméras et l'IA",
-      "description_3": "Développement d'une API assurant la communication entre l'IA et l'interface affichant clairement les EPI détectés et manquants sur l'écran",
-      "description_4": "Mise en place d'une base de données pour l'historisation et le suivi des passages"
-    },
-
-    "c2t": {
-      "job": "Développeur fullstack",
-      "company_location": "Coda Systèmes - Montrouge",
-      "date": "Mai 2025 - Août 2025",
-      "summary": "Développement d'un logiciel d'analyse de vidéos à très haute vitesse (1000 fps) :",
-      "description_1": "Enregistrement de vidéos avec contrôle précis des paramètres de la caméra (résolution, fps, durée de la vidéo...)",
-      "description_2": "Lecture optimisée des vidéos enregistrées avec traitement frame par frame pour une analyse détaillée impossible avec des lecteurs classiques",
-      "description_3": "Développement d'outils de dessins et de suivi d'objets directement sur les vidéos"
-    },
-
-    "qarnot": {
-      "job": "Développeur fullstack",
-      "company_location": "Qarnot - Montrouge",
-      "date": "Mars 2024 - Avril 2025",
-      "summary": "Refonte du site stockant les données internes de l'entreprise :",
-      "description_1": "Création de pages et composants Vue.js (front-end), développement de l'API Node.js (back-end), gestion des modèles Sequelize et de la base de données",
-      "description_2": "Conception et amélioration de composants UI (cards, listes, formulaires) pour améliorer l’ergonomie",
-      "description_3": "Correction de bugs et refactorisation de composants existants",
-      "description_4": "Collaboration avec l'équipe : code reviews GitLab, suivi de tickets Jira, contribution à la documentation technique"
-    },
-
-    "stage_edf": {
-      "job": "Développeur de modèles de simulation",
-      "company_location": "EDF - Palaiseau",
-      "date": "Mai 2023 - Novembre 2023",
-      "summary": "Stage de 5ème année :",
-      "description_1": "Conception d'un outil de simulation multi-agents permettant d'étudier l'impact de facteurs socio-économiques (salaire, localisation...) sur l’adhésion des ménages aux offres EDF"
-    },
-
-    "stage_li_parad": {
-      "job": "Data Scientist - Analyse de disques durs",
-      "company_location": "LI-PaRAD - Guyancourt",
-      "date": "Mai 2022 - Août 2022",
-      "summary": "Stage de 4ème année :",
-      "description_1": "Développement de modèles de Machine Learning pour prédire et détecter les disques durs susceptibles de tomber en panne en fonction de caractéristiques telles que le fabricant, la capacité disponible, le nombre de lectures et d'écritures..."
-    }
+    "items": [
+      {
+        "key": "coda_portique",
+        "job": "Développeur fullstack",
+        "company_location": "Coda Systèmes - Montrouge",
+        "date": "Septembre 2025 - Aujourd'hui",
+        "summary": "Développement d'un portique autonome équipé de caméras et d'un écran, permettant de détecter en temps réel les Équipements de Protection Individuelle (EPI) portés par les utilisateurs grâce à un modèle d'IA embarqué :",
+        "descriptions": [
+          "Entraînement d'un modèle d'IA (YOLO) pour la détection d'EPI (casque, gilet...)",
+          "Intégration du modèle d'IA dans un portique physique : traitement vidéo en temps réel via les caméras et l'IA",
+          "Développement d'une API assurant la communication entre l'IA et l'interface affichant clairement les EPI détectés et manquants sur l'écran",
+          "Mise en place d'une base de données pour l'historisation et le suivi des passages"
+        ],
+        "labels": ["Vue.js", "Javascript", "Ultralytics (YOLO)", "FastAPI", "SQLAlchemy", "Python", "PostgreSQL", "Linux", "Docker", "Bash", "Git", "Github", "Google Cloud Storage"],
+        "highlightLabels": ["Vue.js", "Javascript", "FastAPI", "Python"]
+      },
+      {
+        "key": "c2t",
+        "job": "Développeur fullstack",
+        "company_location": "Coda Systèmes - Montrouge",
+        "date": "Mai 2025 - Août 2025",
+        "summary": "Développement d'un logiciel d'analyse de vidéos à très haute vitesse (1000 fps) :",
+        "descriptions": [
+          "Enregistrement de vidéos avec contrôle précis des paramètres de la caméra",
+          "Lecture optimisée des vidéos enregistrées avec traitement frame by frame",
+          "Développement d'outils de dessins et de suivi d'objets directement sur les vidéos"
+        ],
+        "labels": ["Python", "OpenCV", "PyQt6", "Vimba", "Linux", "Git", "Github"],
+        "highlightLabels": ["Python"]
+      },
+      {
+        "key": "qarnot",
+        "job": "Développeur fullstack",
+        "company_location": "Qarnot - Montrouge",
+        "date": "Mars 2024 - Avril 2025",
+        "summary": "Refonte du site stockant les données internes de l'entreprise :",
+        "descriptions": [
+          "Création de pages et composants Vue.js (front-end), développement de l'API Node.js (back-end), gestion des modèles Sequelize et de la base de données",
+          "Conception et amélioration de composants UI (cards, listes, formulaires) pour améliorer l’ergonomie",
+          "Correction de bugs et refactorisation de composants existants",
+          "Collaboration avec l'équipe : code reviews GitLab, suivi de tickets Jira, contribution à la documentation technique"
+        ],
+        "labels": ["Vue.js", "Node.js", "Sequelize", "MariaDB", "Javascript", "Linux", "Docker", "Bash", "Git", "Gitlab"],
+        "highlightLabels": ["Vue.js", "Node.js", "Javascript"]
+      },
+      {
+        "key": "stage_edf",
+        "job": "Développeur de modèles de simulation",
+        "company_location": "EDF - Palaiseau",
+        "date": "Mai 2023 - Novembre 2023",
+        "summary": "Stage de 5ème année :",
+        "descriptions": [
+          "Conception d'un outil de simulation multi-agents permettant d'étudier l'impact de facteurs socio-économiques (salaire, localisation...) sur l’adhésion des ménages aux offres EDF"
+        ],
+        "labels": ["HTML/CSS", "Julia", "Linux", "Bash", "Docker", "Git", "Github"]
+      },
+      {
+        "key": "stage_li_parad",
+        "job": "Data Scientist - Analyse de disques durs",
+        "company_location": "LI-PaRAD - Guyancourt",
+        "date": "Mai 2022 - Août 2022",
+        "summary": "Stage de 4ème année :",
+        "descriptions": [
+          "Développement de modèles de Machine Learning pour prédire et détecter les disques durs susceptibles de tomber en panne en fonction de caractéristiques telles que le fabricant, la capacité disponible, le nombre de lectures et d'écritures..."
+        ],
+        "labels": ["Python", "Scikit-learn", "NumPy", "Pandas", "Linux", "Bash"],
+        "highlightLabels": ["Python"]
+      }
+    ]
   },
-    "education": {
+  "education": {
     "title": "Formation",
-    "isty": {
-      "title": "Ingénieur informatique",
-      "school": "ISTY, UVSQ Paris-Saclay - Vélizy",
-      "labels": [
-        "Programmation Orientée Objet",
-        "C",
-        "Linux",
-        "Bases de données",
-        "Systèmes d'exploitation",
-        "Compilateurs",
-        "Architecture des ordinateurs",
-        "Algorithmique",
-        "Architecture logicielle"
-      ]
-    },
-    "hpc": {
-      "title": "Master Calcul Haute Performance",
-      "school": "LI-PaRAD, UVSQ Paris-Saclay - Guyancourt",
-      "labels": [
-        "Big Data",
-        "Parallélisme",
-        "Multithreading"
-      ]
-    }
+    "items": [
+      {
+        "key": "isty",
+        "title": "Ingénieur informatique",
+        "school": "ISTY, UVSQ Paris-Saclay - Vélizy",
+        "labels": [
+          "Programmation Orientée Objet",
+          "C",
+          "Linux",
+          "Bases de données",
+          "Systèmes d'exploitation",
+          "Compilateurs",
+          "Architecture des ordinateurs",
+          "Algorithmique",
+          "Architecture logicielle"
+        ],
+        "date": "2018 - 2023"
+      },
+      {
+        "key": "hpc",
+        "title": "Master Calcul Haute Performance",
+        "school": "LI-PaRAD, UVSQ Paris-Saclay - Guyancourt",
+        "labels": [
+          "Big Data",
+          "Parallélisme",
+          "Multithreading"
+        ],
+        "date": "2022 - 2023"
+      }
+    ]
   },
-    "projects": {
+  "projects": {
     "title": "Projets personnels",
     "items": [
       {
@@ -103,7 +130,7 @@
       }
     ]
   },
-    "about": {
+  "about": {
     "title": "À propos",
     "languages": {
       "title": "Langues parlées",

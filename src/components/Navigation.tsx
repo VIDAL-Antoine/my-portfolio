@@ -22,7 +22,7 @@ const Navigation = () => {
   const { t } = useTranslation();
 
   const navItems = [
-    [t("navigation.career"), "career"],
+    [t("navigation.experience"), "experience"],
     [t("navigation.education"), "education"],
     [t("navigation.projects"), "projects"],
     [t("navigation.about"), "about"]
