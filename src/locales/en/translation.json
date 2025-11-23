@@ -17,10 +17,10 @@
         "job": "Fullstack Developer",
         "company_location": "Coda Systèmes - Montrouge",
         "date": "September 2025 - Present",
-        "summary": "Development of an autonomous gateway equipped with cameras and a screen, enabling real-time detection of Personal Protective Equipment (PPE) worn by users through an embedded AI model:",
+        "summary": "Development of an autonomous gantry equipped with cameras and a screen, enabling real-time detection of Personal Protective Equipment (PPE) worn by users through an embedded AI model:",
         "descriptions": [
           "Training a YOLO-based AI model for detecting PPE (helmet, vest, etc.)",
-          "Integrating the AI model into a physical gateway: real-time video processing using cameras and AI",
+          "Integrating the AI model into a physical gantry: real-time video processing using cameras and AI",
           "Developing an API ensuring communication between the AI and the interface that clearly displays detected and missing PPE on the screen",
           "Setting up a database for history logging and tracking entries"
         ],
