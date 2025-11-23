@@ -120,13 +120,13 @@
       {
         "title": "JLPT Explorer",
         "description": "Site web pour apprendre le japonais (actuellement non disponible). Application full-stack : interface en <strong>React</strong> et API REST via <strong>Node.js</strong> connectée à une base MongoDB.",
-        "image": "/jlptexplorer-preview.png"
+        "image": "jlptexplorer-preview.png"
       },
       {
         "title": "Mon site portfolio",
         "description": "Le site où vous êtes actuellement. Développé avec <strong>React</strong>.",
-        "image": "/my-portfolio-preview.png",
-        "link": "https://www.example.com"
+        "image": "my-portfolio-preview.png",
+        "link": "https://vidal-antoine.github.io/my-portfolio/fr"
       }
     ]
   },
@@ -148,6 +148,6 @@
   },
   "footer": {
     "cv_download_text": "Télécharger mon CV",
-    "cv_download_link": "/CV_VIDAL_Antoine_fr.pdf"
+    "cv_download_link": "/my-portfolio/CV_VIDAL_Antoine_fr.pdf"
   }
 }

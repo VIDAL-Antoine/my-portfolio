@@ -3,6 +3,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import '../assets/styles/Main.scss';
 import { useTranslation } from "react-i18next";
+import profileImage from "../assets/images/profile.jpg";
 
 const Main = () => {
   const { t } = useTranslation();
@@ -11,7 +12,7 @@ const Main = () => {
     <div className="container">
       <div className="presentation-section">
         <div className="image-wrapper">
-          <img src='/profile.jpg' alt="Avatar" />
+          <img src={profileImage} alt="Avatar" />
         </div>
         <div className="content">
           <div className="social_icons">

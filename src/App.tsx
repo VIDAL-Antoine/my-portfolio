@@ -3,7 +3,7 @@ import AppContent from "./AppContent";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/my-portfolio">
       <Routes>
         <Route path="/" element={<Navigate to="/fr" replace />} />
         <Route path="/fr" element={<AppContent lang="fr" />} />
