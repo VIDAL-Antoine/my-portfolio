@@ -1,33 +1,47 @@
 import 'flag-icons/css/flag-icons.min.css';
 import TranslateIcon from '@mui/icons-material/Translate';
+import { useTranslation } from 'react-i18next';
 
-interface AboutProps { lang: 'fr' | 'en' }
+const About = () => {
+  const { t } = useTranslation();
 
-const About = ({ lang }: AboutProps) => {
+  const languages = t("about.languages.items", { returnObjects: true }) as { code: string; name: string; level: string }[];
+  const hobbies = t("about.hobbies.items", { returnObjects: true }) as string[];
+
   return (
     <div id="about">
       <div className="items-container">
         <div>
-          <h1>À propos</h1>
+          <h1>{t("about.title")}</h1>
 
           <div>
-            <h2>Langues parlées</h2>
+            <h2>{t("about.languages.title")}</h2>
             <ul>
-              <li style={{ display: 'flex', alignItems: 'center', gap: '8px' }}><span className="fi fi-gb" /> <span>Anglais : B2 (TOEIC 2022 : 925/990)</span></li>
-              <li style={{ display: 'flex', alignItems: 'center', gap: '8px' }}><span className="fi fi-jp" /> <span>Japonais : B1</span></li>
+              {languages.map((lang, index) => (
+                <li key={index} style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  <span className={`fi fi-${lang.code}`} />
+                  <span>{`${lang.name} : ${lang.level}`}</span>
+                </li>
+              ))}
             </ul>
           </div>
 
           <div>
-            <h2>Hobbies</h2>
+            <h2>{t("about.hobbies.title")}</h2>
+            <span>
             <ul>
-              <span>
-                <li style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                <TranslateIcon />
-                Apprentissage de la langue japonaise
-              </li>
-              </span>
+              {hobbies.map((hobby) => (
+                <li
+                  key={hobby}
+                  style={{ display: 'flex', alignItems: 'center', gap: '8px' }}
+                >
+                  <TranslateIcon />
+                  {hobby}
+                </li>
+              ))}
             </ul>
+            </span>
+
           </div>
         </div>
       </div>

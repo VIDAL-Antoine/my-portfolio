@@ -7,7 +7,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Navigate to="/fr" replace />} />
         <Route path="/fr" element={<AppContent lang="fr" />} />
-        {/* <Route path="/en" element={<AppContent lang="en" />} /> */}
+        <Route path="/en" element={<AppContent lang="en" />} />
       </Routes>
     </Router>
   );

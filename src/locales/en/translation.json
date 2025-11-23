@@ -1,0 +1,125 @@
+{
+  "navigation": {
+    "menu": "Menu",
+    "career": "Career",
+    "education": "Education",
+    "projects": "Projects",
+    "about": "About"
+  },
+  "main": {
+    "job": "Fullstack Software Engineer"
+  },
+  "career": {
+    "title": "Professional Experience",
+
+    "coda_portique": {
+      "job": "Fullstack Developer",
+      "company_location": "Coda Systèmes - Montrouge",
+      "date": "September 2025 - Present",
+      "summary": "Development of an autonomous gateway equipped with cameras and a screen, enabling real-time detection of Personal Protective Equipment (PPE) worn by users through an embedded AI model:",
+      "description_1": "Training a YOLO-based AI model for detecting PPE (helmet, vest, etc.)",
+      "description_2": "Integrating the AI model into a physical gateway: real-time video processing using cameras and AI",
+      "description_3": "Developing an API ensuring communication between the AI and the interface that clearly displays detected and missing PPE on the screen",
+      "description_4": "Setting up a database for history logging and tracking entries"
+    },
+
+    "c2t": {
+      "job": "Fullstack Developer",
+      "company_location": "Coda Systèmes - Montrouge",
+      "date": "May 2025 - August 2025",
+      "summary": "Development of a software solution for analyzing ultra-high-speed videos (1000 fps):",
+      "description_1": "Recording videos with precise control of camera parameters (resolution, fps, video duration, etc.)",
+      "description_2": "Optimized playback of recorded videos with frame-by-frame processing for highly detailed analysis, impossible with conventional video players",
+      "description_3": "Development of drawing and object tracking tools directly on the videos"
+    },
+
+    "qarnot": {
+      "job": "Fullstack Developer",
+      "company_location": "Qarnot - Montrouge",
+      "date": "March 2024 - April 2025",
+      "summary": "Redesign of the internal data management website:",
+      "description_1": "Creation of Vue.js pages and components (front-end), development of the Node.js API (back-end), and management of Sequelize models and the database",
+      "description_2": "Design and improvement of UI components (cards, lists, forms) to enhance usability",
+      "description_3": "Bug fixing and refactoring of existing components",
+      "description_4": "Team collaboration: GitLab code reviews, Jira ticket tracking, contribution to technical documentation"
+    },
+
+    "stage_edf": {
+      "job": "Simulation Model Developer",
+      "company_location": "EDF - Palaiseau",
+      "date": "May 2023 - November 2023",
+      "summary": "5th-year internship:",
+      "description_1": "Design of a multi-agent simulation tool to study the impact of socio-economic factors (salary, location, etc.) on households’ adoption of EDF offers"
+    },
+
+    "stage_li_parad": {
+      "job": "Data Scientist - Hard Drive Analysis",
+      "company_location": "LI-PaRAD - Guyancourt",
+      "date": "May 2022 - August 2022",
+      "summary": "4th-year internship:",
+      "description_1": "Development of Machine Learning models to predict and detect hard drives likely to fail based on characteristics such as manufacturer, available capacity, number of reads/writes, and more"
+    }
+  },
+  "education": {
+    "title": "Education",
+    "isty": {
+      "title": "Computer Engineering",
+      "school": "ISTY, UVSQ Paris-Saclay - Vélizy",
+      "labels": [
+        "Object-Oriented Programming",
+        "C",
+        "Linux",
+        "Databases",
+        "Operating Systems",
+        "Compilers",
+        "Computer Architecture",
+        "Algorithms",
+        "Software Architecture"
+      ]
+    },
+    "hpc": {
+      "title": "Master of High Performance Computing",
+      "school": "LI-PaRAD, UVSQ Paris-Saclay - Guyancourt",
+      "labels": [
+        "Big Data",
+        "Parallelism",
+        "Multithreading"
+      ]
+    }
+  },
+  "projects": {
+    "title": "Personal Projects",
+    "items": [
+      {
+        "title": "JLPT Explorer",
+        "description": "Website to learn Japanese (currently unavailable). Full-stack application: front-end in <strong>React</strong> and REST API via <strong>Node.js</strong> connected to a MongoDB database.",
+        "image": "../assets/images/jlptexplorer-preview.png"
+      },
+      {
+        "title": "My Portfolio Website",
+        "description": "The website you are currently on. Developed with <strong>React</strong>.",
+        "image": "../assets/images/my-portfolio-preview.png",
+        "link": "https://www.example.com"
+      }
+    ]
+  },
+  "about": {
+    "title": "About",
+    "languages": {
+      "title": "Languages",
+      "items": [
+        { "code": "gb", "name": "English", "level": "B2 (TOEIC 2022: 925/990)" },
+        { "code": "jp", "name": "Japanese", "level": "B1" }
+      ]
+    },
+    "hobbies": {
+      "title": "Hobbies",
+      "items": [
+        "Learning the Japanese language"
+      ]
+    }
+  },
+  "footer": {
+    "cv_download_text": "Download my resume"
+  }
+}

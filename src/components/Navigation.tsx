@@ -13,51 +13,45 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
+import { useTranslation } from 'react-i18next';
+import LanguageSwitcher from './common/LanguageSwitcher';
 
 const drawerWidth = 240;
-const navItems = [['Expériences professionnelles', 'career'], ['Formation', 'education'], ['Projets', 'projects'], ['À propos', 'about']];
 
+const Navigation = () => {
+  const { t } = useTranslation();
 
-interface NavigationProps { lang: 'fr' | 'en' }
+  const navItems = [
+    [t("navigation.career"), "career"],
+    [t("navigation.education"), "education"],
+    [t("navigation.projects"), "projects"],
+    [t("navigation.about"), "about"]
+  ];
 
-const Navigation = ({ lang }: NavigationProps) => {
   const [mobileOpen, setMobileOpen] = useState<boolean>(false);
   const [scrolled, setScrolled] = useState<boolean>(false);
 
-  const handleDrawerToggle = () => {
-    setMobileOpen((prevState) => !prevState);
-  };
+  const handleDrawerToggle = () => setMobileOpen(prev => !prev);
 
   useEffect(() => {
     const handleScroll = () => {
       const navbar = document.getElementById("navigation");
       if (navbar) {
-        const scrolled = window.scrollY > navbar.clientHeight;
-        setScrolled(scrolled);
+        setScrolled(window.scrollY > navbar.clientHeight);
       }
     };
-
     window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const scrollToSection = (section: string) => {
-    console.log(section)
-    const expertiseElement = document.getElementById(section);
-    if (expertiseElement) {
-      expertiseElement.scrollIntoView({ behavior: 'smooth' });
-      console.log('Scrolling to:', expertiseElement);  // Debugging: Ensure the element is found
-    } else {
-      console.error('Element with id "expertise" not found');  // Debugging: Log error if element is not found
-    }
+    const element = document.getElementById(section);
+    if (element) element.scrollIntoView({ behavior: 'smooth' });
   };
 
   const drawer = (
     <Box className="navigation-bar-responsive" onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <p className="mobile-menu-top"><ListIcon/>Menu</p>
+      <p className="mobile-menu-top"><ListIcon /> {t("navigation.menu")}</p>
       <Divider />
       <List>
         {navItems.map((item) => (
@@ -85,7 +79,7 @@ const Navigation = ({ lang }: NavigationProps) => {
           >
             <MenuIcon />
           </IconButton>
-          <span>FR</span>
+          <LanguageSwitcher />
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
               <Button key={item[0]} onClick={() => scrollToSection(item[1])} sx={{ color: '#fff' }}>
@@ -100,9 +94,7 @@ const Navigation = ({ lang }: NavigationProps) => {
           variant="temporary"
           open={mobileOpen}
           onClose={handleDrawerToggle}
-          ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
-          }}
+          ModalProps={{ keepMounted: true }}
           sx={{
             display: { xs: 'block', sm: 'none' },
             '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
@@ -113,6 +105,6 @@ const Navigation = ({ lang }: NavigationProps) => {
       </nav>
     </Box>
   );
-}
+};
 
 export default Navigation;

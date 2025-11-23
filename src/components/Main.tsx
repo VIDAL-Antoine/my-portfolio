@@ -2,10 +2,11 @@ import EmailIcon from '@mui/icons-material/Email';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import '../assets/styles/Main.scss';
+import { useTranslation } from "react-i18next";
 
-interface MainProps { lang: 'fr' | 'en' }
+const Main = () => {
+  const { t } = useTranslation();
 
-const Main = ({ lang }: MainProps) => {
   return (
     <div className="container">
       <div className="presentation-section">
@@ -19,7 +20,7 @@ const Main = ({ lang }: MainProps) => {
             <a href="https://www.linkedin.com/in/antoine-vidal-40419822a/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
           </div>
           <h1>VIDAL Antoine</h1>
-          <p>Ingénieur développeur fullstack</p>
+          <p>{t("main.job")}</p>
 
           <div className="mobile_social_icons">
             <a href="mailto:avidal78390@gmail.com" target="_blank" rel="noreferrer"><EmailIcon/></a>

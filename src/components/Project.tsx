@@ -1,24 +1,41 @@
 import jlptexplorer from '../assets/images/jlptexplorer-preview.png';
 import myportfoliopreview from '../assets/images/my-portfolio-preview.png';
 import '../assets/styles/Project.scss';
+import { useTranslation } from 'react-i18next';
 
-interface ProjectProps { lang: 'fr' | 'en' }
+const Project = () => {
+    const { t } = useTranslation();
 
-const Project = ({ lang }: ProjectProps) => {
+    const projects = t("projects.items", { returnObjects: true }) as {
+        title: string;
+        description: string;
+        image: string;
+        link?: string;
+    }[];
+
     return(
     <div className="projects-container" id="projects">
-        <h1>Projets personnels</h1>
+        <h1>{t("projects.title")}</h1>
         <div className="projects-grid">
-            <div className="project">
-                <img src={jlptexplorer} className="zoom" alt="thumbnail" width="100%"/>
-                <h2>JLPT Explorer</h2>
-                <p>Site web pour apprendre le japonais (actuellement non disponible). Application full-stack : interface en <strong>React</strong> et API REST via <strong>Node.js</strong> connectée à une base MongoDB.</p>
-            </div>
-            <div className="project">
-                <a href="https://www.example.com" target="_blank" rel="noreferrer"><img src={myportfoliopreview} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://www.example.com" target="_blank" rel="noreferrer"><h2>Mon site portfolio</h2></a>
-                <p>Le site où vous êtes actuellement. Développé avec <strong>React</strong>.</p>
-            </div>
+            {projects.map((project, index) => (
+                <div className="project" key={index}>
+                    {project.link ? (
+                        <a href={project.link} target="_blank" rel="noreferrer">
+                            <img src={project.image} className="zoom" alt="thumbnail" width="100%" />
+                        </a>
+                    ) : (
+                        <img src={project.image} className="zoom" alt="thumbnail" width="100%" />
+                    )}
+                    {project.link ? (
+                        <a href={project.link} target="_blank" rel="noreferrer">
+                            <h2>{project.title}</h2>
+                        </a>
+                    ) : (
+                        <h2>{project.title}</h2>
+                    )}
+                    <p dangerouslySetInnerHTML={{ __html: project.description }} />
+                </div>
+            ))}
         </div>
     </div>
     );
