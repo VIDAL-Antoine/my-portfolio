@@ -98,7 +98,8 @@
           "Computer Architecture",
           "Algorithms",
           "Software Architecture"
-        ]
+        ],
+        "date": "2018 - 2023"
       },
       {
         "key": "hpc",
@@ -108,7 +109,8 @@
           "Big Data",
           "Parallelism",
           "Multithreading"
-        ]
+        ],
+        "date": "2022 - 2023"
       }
     ]
   },
