@@ -1,5 +1,3 @@
-import jlptexplorer from '../assets/images/jlptexplorer-preview.png';
-import myportfoliopreview from '../assets/images/my-portfolio-preview.png';
 import '../assets/styles/Project.scss';
 import { useTranslation } from 'react-i18next';
 

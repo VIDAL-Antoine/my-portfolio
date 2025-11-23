@@ -93,12 +93,12 @@
       {
         "title": "JLPT Explorer",
         "description": "Site web pour apprendre le japonais (actuellement non disponible). Application full-stack : interface en <strong>React</strong> et API REST via <strong>Node.js</strong> connectée à une base MongoDB.",
-        "image": "../assets/images/jlptexplorer-preview.png"
+        "image": "/jlptexplorer-preview.png"
       },
       {
         "title": "Mon site portfolio",
         "description": "Le site où vous êtes actuellement. Développé avec <strong>React</strong>.",
-        "image": "../assets/images/my-portfolio-preview.png",
+        "image": "/my-portfolio-preview.png",
         "link": "https://www.example.com"
       }
     ]

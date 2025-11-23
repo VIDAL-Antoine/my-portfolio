@@ -93,12 +93,12 @@
       {
         "title": "JLPT Explorer",
         "description": "Website to learn Japanese (currently unavailable). Full-stack application: front-end in <strong>React</strong> and REST API via <strong>Node.js</strong> connected to a MongoDB database.",
-        "image": "../assets/images/jlptexplorer-preview.png"
+        "image": "/jlptexplorer-preview.png"
       },
       {
         "title": "My Portfolio Website",
         "description": "The website you are currently on. Developed with <strong>React</strong>.",
-        "image": "../assets/images/my-portfolio-preview.png",
+        "image": "/my-portfolio-preview.png",
         "link": "https://www.example.com"
       }
     ]
