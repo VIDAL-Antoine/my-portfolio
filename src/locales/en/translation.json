@@ -103,7 +103,7 @@
       },
       {
         "key": "hpc",
-        "title": "Master of High Performance Computing",
+        "title": "Master in High Performance Computing",
         "school": "LI-PaRAD, UVSQ Paris-Saclay - Guyancourt",
         "labels": [
           "Big Data",
@@ -147,6 +147,7 @@
     }
   },
   "footer": {
-    "cv_download_text": "Download my resume"
+    "cv_download_text": "Download my resume",
+    "cv_download_link": "/CV_VIDAL_Antoine_en.pdf"
   }
 }

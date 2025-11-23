@@ -23,7 +23,7 @@ const Footer = () => {
         }}
       >
         <a
-          href="/CV_VIDAL_Antoine.pdf"
+          href={t("footer.cv_download_link")}
           target="_blank"
           style={{
             display: "flex",

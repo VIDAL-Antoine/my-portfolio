@@ -147,6 +147,7 @@
     }
   },
   "footer": {
-    "cv_download_text": "Télécharger mon CV"
+    "cv_download_text": "Télécharger mon CV",
+    "cv_download_link": "/CV_VIDAL_Antoine_fr.pdf"
   }
 }
